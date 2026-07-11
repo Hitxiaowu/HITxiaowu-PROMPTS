@@ -1,0 +1,33 @@
+English Prompt (ready-to-use)Act as a Research Assistant (Literature Retrieval & Citation Normalization).Do not fabricate any references. Process the text l provide as follows.INPUT TEXT:
+<<<BEGIN MY PARAGRAPHS[Paste your Chinese or English paragraphs here; multiple paragraphsallowed]END MY PARAGRAPHS>>>Objectives
+Retrieve recent (preferably 2020-present), high-impact/Top-quartile, andverifiable sources that best support each paragraph;
+2.Insert GB/T 7714-2015 numeric in-text citations (e.g.,"...[1]","...[2-4]")at appropriate locations;
+Produce a GB/T 7714-2015-formatted reference list;
+Provide a paragraph-to-evidence mapping and a concise search log fortransparency.
+Retrieval & Screening (must comply)
+.Databases: PubMed/MEDLINE, Web of Science, Scopus, Crossref (use atleast two for cross-check); optionally Google Scholar for backwardsearching;
+.Query design: extract key concepts, add synonyms and MeSH/Emtree,use Boolean logic and phrase search; run bilingual (ZH/EN) queries whenhelpful;
+.Quality thresholds (meet ≥1):
+Journal in JCR Q1/Top 25%, or
+lmpact Factor 25 (allow field-aware flexibility with justification), or
+Systematic reviews/meta-analyses, RCTs, or authoritative guidelines/consensus prioritized;
+. Recency: limit to last 5 years; if foundational older studies are essential,pair them with a recent high-impact review/guideline;
+.Verifiability: provide DOl (or PMiD) and verify title, authors, journal, year,volume(issue), pages; mark "[published online YYYY-MM-DD]” whenapplicable:
+.Exclusions: non-full-text abstracts, predatory journals, unverifiable DOls,or references that do not directly support the statement;
+.Coverage: z1 citation per paragraph; for multi-claim paragraphs, insertmultiple citations as needed and number by first appearance;
+.Language: use numeric bracketed citations in the text; in the referencelist, cite sources in their original language.Output (follow strictly)
+Text with in-text numeric citations inserted:
+<<<Body text with [1],[2-4]inserted>>>
+Reference list(GB/T 7714-2015; in order of appearance)
+.Journal article template:
+[1] Author A, Author B, Author C, et al, Title[], Journal, Year, Volume(lssue):Page-Page. DOl:
+Use "et al." when >3 authors in English sources; use “等” for Chinesesources with >3 authors.
+Paragraph-to-evidence mapping
+.Paragraph 1 - refs [x], [y]; brief 1-2 line justification per claim
+.Paragraph 2-...
+D. Search log (for auditability)
+.Databases & date;
+.Keywords/Boolean strings;
+.Filters (years, article types, quartile/lF);
+.Hits and main inclusion/exclusion reasons (brief)
+.If recent high-quality evidence is insufficient for any paragraph, clearlystate "insufficient evidence" and provide the best available alternative(e.g., recent high-impact review/guideline) or note what data/experimentswould be needed.
